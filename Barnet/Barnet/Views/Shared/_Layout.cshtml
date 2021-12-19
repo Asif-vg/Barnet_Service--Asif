@@ -1,0 +1,459 @@
+﻿@model VmLayout
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from html.commonsupport.xyz/2019/Barnet/blog-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Dec 2021 10:21:25 GMT -->
+<head>
+    <meta charset="utf-8">
+    <title>Barnet HTML Template</title>
+
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <!-- Fav Icons -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+</head>
+
+<body>
+    <div class="page-wrapper">
+
+        <!-- Preloader -->
+        <div class="preloader">
+            <div class="spinner_wrap">
+                <div class="spinner"></div>
+            </div>
+        </div>
+
+        <!-- main header -->
+        <header class="main-header">
+
+            <!-- header top -->
+            <div class="header-top">
+                <div class="container">
+                    <div class="outer-box clearfix">
+                        <!--Top Left-->
+                        <div class="top-left float-sm-left">
+                            <div class="social-links clearfix">
+                                @foreach (var tsocial in Model.Socials)
+                                 {
+                                    <a href="#"><span class="@tsocial.Icon"></span></a>
+
+                                 }
+
+                            </div>
+                        </div>
+
+                        <!--Top Right-->
+                        <div class="top-right float-sm-right">
+                            <ul class="topbar-info">
+                                <li><a href="#"><i class="fa fa-phone"></i>@Model.Setting.Phone2</a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a>@Model.Setting.Email</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Header upper -->
+            <div class="header-upper">
+                <div class="container clearfix">
+
+                    <div class="float-left logo-outer">
+                        <div class="logo"><a href="index.html"><img src="images/@Model.Setting.Logo" alt="" title=""></a></div>
+                    </div>
+
+                    <div class="float-right upper-right clearfix">
+
+                        <div class="nav-outer clearfix">
+                            <!-- Main Menu -->
+                            <nav class="main-menu navbar-expand-lg">
+                                <div class="navbar-header">
+                                    <!-- Toggle Button -->
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+
+                                <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+                                    <ul class="navigation clearfix">
+                                        <li class="dropdown">
+                                            <a href="#">Home</a>
+                                            <ul>
+                                                <li><a asp-controller="Home" asp-action="Index">Home One</a></li>
+                                                <li><a href="index-2.html">Home Two</a></li>
+                                                <li><a href="index-3.html">Home Three</a></li>
+                                                <li><a href="index-4.html">Home Four</a></li>
+                                                <li><a href="index-5.html">Home Five</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#">About</a>
+                                            <ul>
+                                                <li><a href="about.html">About One</a></li>
+                                                <li><a href="about-2.html">About Two</a></li>
+                                                <li><a href="history.html">Company History</a></li>
+                                                <li><a href="team.html">Team One</a></li>
+                                                <li><a href="team-2.html">Team Two</a></li>
+                                                <li><a href="team-3.html">Team Three</a></li>
+                                                <li><a href="testimonial.html">Testimonial</a></li>
+                                                <li><a href="pricing.html">Pricing</a></li>
+                                                <li><a href="faq.html">FAQ's</a></li>
+                                                <li><a href="error.html">404 Page</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#">Services</a>
+                                            <ul>
+                                                <li><a asp-controller="Service" asp-action="Index">Services One</a></li>
+                                                <li><a href="services-2.html">Services Two</a></li>
+                                                <li><a href="services-3.html">Services Three</a></li>
+                                                <li><a href="service-details.html">Market Growthing</a></li>
+                                                <li><a href="service-details-2.html">Financial Planning</a></li>
+                                                <li><a href="service-details-3.html">Creative Invention</a></li>
+                                                <li><a href="service-details-4.html">Business Consulting</a></li>
+                                                <li><a href="service-details-5.html">Startup Investment</a></li>
+                                                <li><a href="service-details-6.html">Professional Approach</a></li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#">Cases</a>
+                                            <ul>
+                                                <li><a href="cases.html">Cases One</a></li>
+                                                <li><a href="cases-2.html">Cases Two</a></li>
+                                                <li><a href="cases-3.html">Cases Three</a></li>
+                                                <li><a href="cases-4.html">Cases Four</a></li>
+                                                <li><a href="cases-5.html">Cases Five</a></li>
+                                                <li><a href="case-details.html">Case Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#">Shop</a>
+                                            <ul>
+                                                <li><a href="shop.html">Products</a></li>
+                                                <li><a href="single-shop.html">Single Product</a></li>
+                                                <li><a href="shopping-cart.html">Shopping Cart</a></li>
+                                                <li><a href="checkout.html">Checkout</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="current dropdown">
+                                            <a href="#">Blog</a>
+                                            <ul>
+                                                <li><a asp-controller="Blog" asp-action="Index">Blog Grid</a></li>
+                                                <li><a href="blog-2.html">Blog Sidebar</a></li>
+                                                <li><a href="blog-3.html">Blog Clasic</a></li>
+                                                <li><a asp-controller="BlogDetails" asp-action="Index">Blog Grid>Blog Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                            <!-- Main Menu End-->
+                            <div class="menu-right-content">
+                                <!--Search Box-->
+                                <div class="search-box-outer">
+                                    <div class="dropdown">
+                                        <button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-search"></span></button>
+                                        <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3">
+                                            <li class="panel-outer">
+                                                <div class="form-container">
+                                                    <form method="post" action="http://html.commonsupport.xyz/2019/Barnet/blog.html">
+                                                        <div class="form-group">
+                                                            <input type="search" name="field-name" value="" placeholder="Search...." required="">
+                                                            <button type="submit" class="search-btn"><span class="fa fa-search"></span></button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="link-btn"><a href="#" class="theme-btn btn-style-two">Get Start Now</a></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!--End Header Upper-->
+            <!--Sticky Header-->
+            <div class="sticky-header">
+                <div class="container">
+                    <div class="clearfix">
+                        <!--Logo-->
+                        <div class="logo float-left">
+                            <a href="index.html" class="img-responsive"><img src="images/@Model.Setting.Logo" alt="" title=""></a>
+                        </div>
+
+                        <!--Right Col-->
+                        <div class="right-col float-right">
+                            <!-- Main Menu -->
+                            <nav class="main-menu navbar-expand-lg">
+                                <div class="navbar-collapse collapse clearfix">
+                                    <ul class="navigation clearfix">
+                                        <li class="dropdown">
+                                            <a href="#">Home</a>
+                                            <ul>
+                                                <li><a asp-controller="Home" asp-action="Index">Home One</a></li>
+                                                <li><a href="index-2.html">Home Two</a></li>
+                                                <li><a href="index-3.html">Home Three</a></li>
+                                                <li><a href="index-4.html">Home Four</a></li>
+                                                <li><a href="index-5.html">Home Five</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#">About</a>
+                                            <ul>
+                                                <li><a href="about.html">About One</a></li>
+                                                <li><a href="about-2.html">About Two</a></li>
+                                                <li><a href="history.html">Company History</a></li>
+                                                <li><a href="team.html">Team One</a></li>
+                                                <li><a href="team-2.html">Team Two</a></li>
+                                                <li><a href="team-3.html">Team Three</a></li>
+                                                <li><a href="testimonial.html">Testimonial</a></li>
+                                                <li><a href="pricing.html">Pricing</a></li>
+                                                <li><a href="faq.html">FAQ's</a></li>
+                                                <li><a href="error.html">404 Page</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#">Services</a>
+                                            <ul>
+                                                <li><a asp-controller="Service" asp-action="Index">Services One</a></li>
+                                                <li><a href="services-2.html">Services Two</a></li>
+                                                <li><a href="services-3.html">Services Three</a></li>
+                                                <li><a href="service-details.html">Market Growthing</a></li>
+                                                <li><a href="service-details-2.html">Financial Planning</a></li>
+                                                <li><a href="service-details-3.html">Creative Invention</a></li>
+                                                <li><a href="service-details-4.html">Business Consulting</a></li>
+                                                <li><a href="service-details-5.html">Startup Investment</a></li>
+                                                <li><a href="service-details-6.html">Professional Approach</a></li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#">Cases</a>
+                                            <ul>
+                                                <li><a href="cases.html">Cases One</a></li>
+                                                <li><a href="cases-2.html">Cases Two</a></li>
+                                                <li><a href="cases-3.html">Cases Three</a></li>
+                                                <li><a href="cases-4.html">Cases Four</a></li>
+                                                <li><a href="cases-5.html">Cases Five</a></li>
+                                                <li><a href="case-details.html">Case Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#">Shop</a>
+                                            <ul>
+                                                <li><a href="shop.html">Products</a></li>
+                                                <li><a href="single-shop.html">Single Product</a></li>
+                                                <li><a href="shopping-cart.html">Shopping Cart</a></li>
+                                                <li><a href="checkout.html">Checkout</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="current dropdown">
+                                            <a href="#">Blog</a>
+                                            <ul>
+                                                <li><a asp-controller="Blog" asp-action="Index">Blog Grid</a></li>
+                                                <li><a href="blog-2.html">Blog Sidebar</a></li>
+                                                <li><a href="blog-3.html">Blog Clasic</a></li>
+                                                <li><a href="blog-details.html">Blog Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </nav><!-- Main Menu End-->
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <!--End Sticky Header-->
+        </header>
+
+        @RenderBody();
+
+        <!-- Subscribe section -->
+        <section class="subscribe-section">
+            <div class="container">
+                <div class="outer-box">
+                    <div class="row">
+                        <div class="title-column col-lg-6">
+                            <h2>Subscribe <br>to Our Newsletter</h2>
+                        </div>
+                        <div class="subscribe-form col-lg-6">
+                            <form method="post" action="http://html.commonsupport.xyz/2019/Barnet/contact.html">
+                                <div class="form-group">
+                                    <input type="email" name="email" value="" placeholder="Your email..." required="">
+                                    <button type="submit" class="theme-btn btn-style-six">Subscribe Now</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main footer -->
+        <footer class="main-footer" style="background-image:url(images/background/1.jpg)">
+            <div class="container">
+
+                <!--Widgets Section-->
+                <div class="widgets-section">
+                    <div class="row clearfix">
+                        <!--Footer Column-->
+                        <div class="footer-column col-lg-3 col-md-6">
+                            <div class="footer-widget about-widget">
+                                <div class="footer-logo">
+                                    <figure>
+                                        <a href="index.html"><img src="images/@Model.Setting.Logo" alt=""></a>
+                                    </figure>
+                                </div>
+                                <div class="widget-content">
+                                    <div class="text">
+                                        <p>@Model.Setting.About</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End column -->
+                        <!--Footer Column-->
+                        <div class="footer-column col-lg-3 col-md-6">
+                            <div class="footer-widget twitter-widget">
+                                <h4 class="widget-title">Twitter Feeds</h4>
+                                <div class="widget-content">
+                                    <article class="post">
+                                        <div class="top-info">
+                                            <span class="icon fab fa-twitter"></span>
+                                            <div class="author">Kirstin Hagel</div>
+                                            <div class="author-meta">KirstinHagel  . 7 Dec</div>
+                                        </div>
+                                        <div class="text">Excepteur sint occaecat cupidatat proent. <a href="#">https://T.Co/Sr45bvMJU6</a></div>
+                                    </article>
+
+                                    <article class="post">
+                                        <div class="top-info">
+                                            <span class="icon fab fa-twitter"></span>
+                                            <div class="author">Kirstin Hagel</div>
+                                            <div class="author-meta">KirstinHagel  . 7 Dec</div>
+                                        </div>
+                                        <div class="text">Excepteur sint occaecat cupidatat proent. <a href="#">https://T.Co/Sr45bvMJU6</a></div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End column -->
+                        <!--Footer Column-->
+                        <div class="footer-column col-lg-3 col-md-6">
+                            <div class="footer-widget post-widget">
+                                <h4 class="widget-title">Latest Articles</h4>
+
+                                <article class="post">
+                                    <div class="post-date">26 Dec, 2018</div>
+                                    <h5><a href="blog-details.html">Aspernatur aut odit fugit quia</a></h5v>
+                                </article>
+
+                                <article class="post">
+                                    <div class="post-date">26 Dec, 2018</div>
+                                    <h5><a href="blog-details.html">Aspernatur aut odit fugit quia</a></h5>
+                                </article>
+
+                                <article class="post">
+                                    <div class="post-date">26 Dec, 2018</div>
+                                    <h5><a href="blog-details.html">Aspernatur aut odit fugit quia</a></h5>
+                                </article>
+
+                            </div>
+                        </div>
+                        <!--Footer Column-->
+                        <div class="footer-column col-lg-3 col-md-6">
+                            <div class="footer-widget contact-info-widget">
+                                <h4 class="widget-title">Contact Info</h4>
+
+                                <ul class="contact-info-list">
+                                    <li>@Model.Setting.Address</li>
+                                    <li>@Model.Setting.Phone1</li>
+                                    <li>@Model.Setting.Email</li>
+                                </ul>
+                                <ul class="social-link clearfix">
+                                    @foreach (var social in Model.Socials)
+                                     {
+                                        <li><a href="#"><span class="@social.Icon"></span></a></li>
+
+                                     }
+
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End column -->
+                    </div>
+                </div>
+            </div>
+
+            <!--Footer Bottom-->
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="clearfix">
+                        <div class="float-sm-left">
+                            <div class="copyright-text">
+                                <p><a href="index.html">Barnet</a> © 2019 All Right Reserved</p>
+                            </div>
+                        </div>
+                        <div class="float-sm-right">
+                            <ul>
+                                <li><a href="#">Terms of Service</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    </div>
+    <!--End pagewrapper-->
+    <!-- Scroll Top Button -->
+    <button class="scroll-top scroll-to-target" data-target="html">
+        <span class="fa fa-angle-up"></span>
+    </button>
+
+
+    <!-- jequery plugins -->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/popover.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/wow.js"></script>
+    <script src="js/owl.js"></script>
+    <script src="js/validate.js"></script>
+    <script src="js/mixitup.js"></script>
+    <script src="js/isotope.js"></script>
+    <script src="js/appear.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/jquery.background-video.js"></script>
+    <script src="js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+<!-- Mirrored from html.commonsupport.xyz/2019/Barnet/blog-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Dec 2021 10:21:42 GMT -->
+</html>

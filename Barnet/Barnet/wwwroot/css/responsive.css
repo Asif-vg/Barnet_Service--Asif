@@ -1,0 +1,287 @@
+/* Barnet - HTML Template */
+
+@media only screen and (max-width: 1800px) {
+	.main-slider .slider-wrapper .image img {
+		width: auto;
+	}
+}
+
+@media only screen and (max-width: 1600px) {
+	/* Fluid section one */
+	.fluid-section-one .outer-container {
+		padding: 0 15px;
+	}
+	.fluid-section-one:after {
+		display: none;
+	}
+	.fluid-section-one .image-column {
+		position: relative;
+		left: 0;
+		width: 100%;
+		max-width: 1170px;
+		margin: 0 auto;
+		margin-bottom: 50px;
+	}
+	.fluid-section-one .image-column .image-box {
+		display: block;
+	}
+	.fluid-section-one .image-column .image-box img {
+		width: 100%;
+	}
+	.fluid-section-one .content-column {
+		width: 100%;
+		max-width: 1170px;
+		margin: 0 auto;
+		float: none;
+	}
+	.fluid-section-one .content-column:before {
+		display: none;
+	}
+	.fluid-section-one .content-column .inner-column {
+		padding: 0px 0px 80px 0px;
+	}
+	/* Fluid section two */
+	.fluid-section-two .outer-container {
+		padding: 0 15px;
+	}
+	.fluid-section-two:after {
+		display: none;
+	}
+	.fluid-section-two .image-column {
+		position: relative;
+		left: 0;
+		width: 100%;
+		max-width: 1170px;
+		margin: 0 auto;
+	}
+	.fluid-section-two .image-column .image-box img {
+		width: 100%;
+	}
+	.fluid-section-two .content-column {
+		width: 100%;
+		max-width: 1170px;
+		margin: 0 auto;
+		float: none;
+	}
+	.fluid-section-two .content-column .inner-column {
+		padding: 0px 0px 80px 0px;
+	}
+	.fluid-section-two .outer-container:before,
+	.fluid-section-two:before {
+		display: none;
+	}
+	/* Fluid section three */
+	.fluid-section-three .outer-container {
+		padding: 0 15px;
+	}
+	.fluid-section-three:after {
+		display: none;
+	}
+	.fluid-section-three .image-column {
+		position: relative;
+		left: 0;
+		width: 100%;
+		max-width: 1170px;
+		margin: 0 auto;
+		top: 0;
+	}
+	.fluid-section-three .image-column .image-box {
+		display: block;
+	}
+	.fluid-section-three .image-column .image-box img {
+		width: 100%;
+	}
+	.fluid-section-three .content-column {
+		width: 100%;
+		max-width: 1170px;
+		margin: 0 auto;
+		float: none;
+	}
+	.fluid-section-three .content-column .inner-column {
+		padding: 80px 30px 80px 30px;
+	}
+}
+
+@media only screen and (max-width: 1300px) {
+	.page-wrapper {
+		overflow: hidden;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.five-column {
+		max-width: 20%;
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+	.container {
+		max-width: 100%;
+	}
+	.page-wrapper {
+		margin-bottom: 0px !important;
+	}
+	.fluid-section .left-column,
+	.fluid-section .right-column {
+		width: 100%;
+		float: none;
+	}
+	.fluid-section .right-column .content-area {
+		max-width: 100%;
+		padding-left: 15px;
+	}
+	.fluid-section .left-column .inner-column {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.main-header .header-upper.style-two .upper-right {
+		padding: 0;
+	}
+	.main-header .header-upper.style-two .upper-right:before {
+		display: none;
+	}
+	.mission-section .left-column {
+		width: 100%;
+	}
+	.mission-section .left-column .inner-column {
+		float: left;
+	}
+	.mission-section .right-column {
+		width: 100%;
+		padding-left: 15px;
+	}
+	.owl-nav-style-four .owl-nav .owl-prev {
+		left: 10px;
+	}
+	.owl-nav-style-four .owl-nav .owl-next {
+		right: 10px;
+	}
+	.call-to-action-section .left-column .inner-column {
+		padding-bottom: 0px;
+	}
+	.call-to-action-section .right-column {
+		float: left;
+	}
+	.call-to-action-section .right-column .inner-column {
+		padding-top: 20px;
+	}
+	.working-process .row {
+		margin: 0 -15px;
+	}
+	.process-block {
+		padding: 0 15px;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.row.row-revers-lg {
+	  -webkit-box-orient: horizontal !important;
+	  -webkit-box-direction: reverse !important;
+	  -ms-flex-direction: row-reverse !important;
+	  flex-direction: row-reverse !important;
+	}
+}
+
+
+@media only screen and (max-width: 991px) {
+	.main-header .header-upper.style-two .upper-right{
+		display: block;
+	}
+	.about-section .content-column {
+		width: 100%;
+		float: none;
+	}
+	.about-section .about-block-area {
+		float: none;
+	}
+	.about-section .image-column {
+		background-image: none !important;
+	    position: relative;
+	    width: 100%;
+	}
+	.about-section .image-column .image-box {
+		display: block;
+	}
+	.main-footer .posts-widget {
+		padding-right: 0px;
+		margin-left: 0px;
+	}
+	.blog-section-two:before {
+		display: none;
+	}
+	.news-block-two .inner-box:hover .lower-content,
+	.news-block-two .inner-box .lower-content{
+		transform: translateY(-0%);
+		margin: 0px;
+	}
+	.subscribe-section .subscribe-form {
+		margin-top: 0px;
+	}
+	.skill-section.style-two:before,
+	.funfact-section-two .fact-counter .item .inner-box:before,
+	.feature-section-two:before,
+	.about-section-three:before,
+	.about-section-four:before {
+		display: none;
+	}
+	.about-section-three {
+		padding-bottom: 0px;
+	}
+	.about-section-two .about-content-block {
+		padding-top: 0px;
+	}
+	.skill-section .image-block .image,
+	.about-video-block {
+		margin-right: 0px;
+	}
+	.funfact-section-two .fact-counter .item {
+		text-align: center;
+	}
+	.funfact-section-two .fact-counter .item .inner-box {
+		display: inline-block;
+		min-width: 200px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.contact-info-section-two .image-column,
+	.contact-info-section-two .content-column {
+		position: relative;
+		width: 100%;
+	}
+	.contact-info-section-two .image-column .image-box {
+		display: block;
+	}
+	.process-block:nth-child(2) .inner-box {
+		margin-top: 0px;
+		animation: none;
+	}
+}
+
+
+@media only screen and (max-width: 599px) {
+	.main-slider h1 {
+		font-size: 48px;
+		line-height: 50px;
+	}
+	.subscribe-section .subscribe-form .form-group input[type="email"] {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.about-video-block .default-video-box {
+	    position: relative;
+	    padding: 40px 20px;
+	    display: block;
+	    text-align: center;
+	    bottom: 0;
+	}
+
+	.about-video-block .default-video-box h4 {
+	    padding-left: 0;
+	    margin-top: 35px;
+	}
+	.services-section .outer-box {
+		padding: 25px 0 0;
+	}
+}
+

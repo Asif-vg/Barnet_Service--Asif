@@ -1,0 +1,520 @@
+﻿@model VmService
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<!-- Page title -->
+<section class="page-title" style="background-image:url(images/background/3.jpg)">
+    <div class="container">
+        <div class="outer-box">
+            <h1>Service One</h1>
+            <ul class="bread-crumb clearfix">
+                <li><a href="index.html">Home</a></li>
+                <li class="active">Service One</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<!-- Services section three -->
+<section class="services-section-one sp-two">
+    <div class="container">
+        <div class="sec-title centered">
+            <h1>We Provide Wide Range of <br>Business Services</h1>
+        </div>
+        <div class="row">
+            @foreach (var service in Model.Service)
+            {
+                <!-- Service block three -->
+                <div class="services-block-three col-lg-4">
+                    <div class="inner-box hvr-float-shadow">
+                        <div class="image"><img src="~/Uploads/@service.Image" alt=""></div>
+                        <div class="lower-content">
+                            <div class="icon"><span class="@service.Icon"></span></div>
+                            <h4>@service.Title</h4>
+                            <div class="text">@service.Content</div>
+                            <div class="read-more-btn"><a href="#" class="theme-btn">Read More <span class="icon-right-arrow2"></span></a></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End block -->
+            }
+
+
+        </div>
+    </div>
+</section>
+
+<!--Project Section-->
+<section class="project-section sp-four grey-bg">
+
+    <!--Porfolio Tabs-->
+    <div class="project-tab">
+        <div class="container">
+            <!--Top content-->
+            <div class="top-content">
+                <div class="row m-0 justify-content-md-between align-items-center">
+                    <div class="sec-title">
+                        <h1>We’ve Done Lot’s of Work, Let’s <br>Check Some From Here</h1>
+                    </div>
+                    <div class="tab-btns-box">
+                        <!--Tabs Header-->
+                        <div class="tabs-header">
+                            <ul class="product-tab-btns clearfix">
+                                <li class="p-tab-btn active-btn" data-tab="#p-tab-1">All</li>
+                                <li class="p-tab-btn" data-tab="#p-tab-2">Design</li>
+                                <li class="p-tab-btn" data-tab="#p-tab-3">Graphic</li>
+                                <li class="p-tab-btn" data-tab="#p-tab-4">Photography</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Tabs Content-->
+        <div class="p-tabs-content">
+            <!--Portfolio Tab / Active Tab-->
+            <div class="p-tab active-tab" id="p-tab-1">
+                <div class="project-carousel owl-theme owl-carousel">
+
+                    <!--Gallery Block-->
+                    <div class="gallery-block">
+                        <div class="inner-box">
+                            <figure class="image-box">
+                                <img src="images/gallery/1.jpg" alt="">
+                                <!--Overlay Box-->
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <div class="content">
+                                            <div class="content-text">
+                                                <div class="category">Corporate</div>
+                                                <h3><a href="projects-detail.html">Business Solution</a></h3>
+                                                <div class="text">Lorem ipsum dolor sit amet constur adipelit sed do eiusm tempor magna aliqu enim ad minim veniam quis nostrud.exercittion ullamco laboris nisi ut aliquip excepteur.sint occaecat cuidatat non proident sunt in culpa officia.</div>
+                                                <div class="link-btn"><a href="#" class="theme-btn btn-style-two small-btn">Read More</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <!--Gallery Block-->
+                    <div class="gallery-block">
+                        <div class="inner-box">
+                            <figure class="image-box">
+                                <img src="images/gallery/2.jpg" alt="">
+                                <!--Overlay Box-->
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <div class="content">
+                                            <div class="content-text">
+                                                <div class="category">Corporate</div>
+                                                <h3><a href="projects-detail.html">Business Solution</a></h3>
+                                                <div class="text">Lorem ipsum dolor sit amet constur adipelit sed do eiusm tempor magna aliqu enim ad minim veniam quis nostrud.exercittion ullamco laboris nisi ut aliquip excepteur.sint occaecat cuidatat non proident sunt in culpa officia.</div>
+                                                <div class="link-btn"><a href="#" class="theme-btn btn-style-two small-btn">Read More</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <!--Gallery Block-->
+                    <div class="gallery-block">
+                        <div class="inner-box">
+                            <figure class="image-box">
+                                <img src="images/gallery/3.jpg" alt="">
+                                <!--Overlay Box-->
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <div class="content">
+                                            <div class="content-text">
+                                                <div class="category">Corporate</div>
+                                                <h3><a href="projects-detail.html">Business Solution</a></h3>
+                                                <div class="text">Lorem ipsum dolor sit amet constur adipelit sed do eiusm tempor magna aliqu enim ad minim veniam quis nostrud.exercittion ullamco laboris nisi ut aliquip excepteur.sint occaecat cuidatat non proident sunt in culpa officia.</div>
+                                                <div class="link-btn"><a href="#" class="theme-btn btn-style-two small-btn">Read More</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <!--Gallery Block-->
+                    <div class="gallery-block">
+                        <div class="inner-box">
+                            <figure class="image-box">
+                                <img src="images/gallery/4.jpg" alt="">
+                                <!--Overlay Box-->
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <div class="content">
+                                            <div class="content-text">
+                                                <div class="category">Corporate</div>
+                                                <h3><a href="projects-detail.html">Business Solution</a></h3>
+                                                <div class="text">Lorem ipsum dolor sit amet constur adipelit sed do eiusm tempor magna aliqu enim ad minim veniam quis nostrud.exercittion ullamco laboris nisi ut aliquip excepteur.sint occaecat cuidatat non proident sunt in culpa officia.</div>
+                                                <div class="link-btn"><a href="#" class="theme-btn btn-style-two small-btn">Read More</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--Portfolio Tab-->
+            <div class="p-tab" id="p-tab-2">
+                <div class="project-carousel owl-theme owl-carousel">
+
+                    <!--Gallery Block-->
+                    <div class="gallery-block">
+                        <div class="inner-box">
+                            <figure class="image-box">
+                                <img src="images/gallery/4.jpg" alt="">
+                                <!--Overlay Box-->
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <div class="content">
+                                            <div class="content-text">
+                                                <div class="category">Corporate</div>
+                                                <h3><a href="projects-detail.html">Business Solution</a></h3>
+                                                <div class="text">Lorem ipsum dolor sit amet constur adipelit sed do eiusm tempor magna aliqu enim ad minim veniam quis nostrud.exercittion ullamco laboris nisi ut aliquip excepteur.sint occaecat cuidatat non proident sunt in culpa officia.</div>
+                                                <div class="link-btn"><a href="#" class="theme-btn btn-style-two small-btn">Read More</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <!--Gallery Block-->
+                    <div class="gallery-block">
+                        <div class="inner-box">
+                            <figure class="image-box">
+                                <img src="images/gallery/3.jpg" alt="">
+                                <!--Overlay Box-->
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <div class="content">
+                                            <div class="content-text">
+                                                <div class="category">Corporate</div>
+                                                <h3><a href="projects-detail.html">Business Solution</a></h3>
+                                                <div class="text">Lorem ipsum dolor sit amet constur adipelit sed do eiusm tempor magna aliqu enim ad minim veniam quis nostrud.exercittion ullamco laboris nisi ut aliquip excepteur.sint occaecat cuidatat non proident sunt in culpa officia.</div>
+                                                <div class="link-btn"><a href="#" class="theme-btn btn-style-two small-btn">Read More</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <!--Gallery Block-->
+                    <div class="gallery-block">
+                        <div class="inner-box">
+                            <figure class="image-box">
+                                <img src="images/gallery/2.jpg" alt="">
+                                <!--Overlay Box-->
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <div class="content">
+                                            <div class="content-text">
+                                                <div class="category">Corporate</div>
+                                                <h3><a href="projects-detail.html">Business Solution</a></h3>
+                                                <div class="text">Lorem ipsum dolor sit amet constur adipelit sed do eiusm tempor magna aliqu enim ad minim veniam quis nostrud.exercittion ullamco laboris nisi ut aliquip excepteur.sint occaecat cuidatat non proident sunt in culpa officia.</div>
+                                                <div class="link-btn"><a href="#" class="theme-btn btn-style-two small-btn">Read More</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <!--Gallery Block-->
+                    <div class="gallery-block">
+                        <div class="inner-box">
+                            <figure class="image-box">
+                                <img src="images/gallery/1.jpg" alt="">
+                                <!--Overlay Box-->
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <div class="content">
+                                            <div class="content-text">
+                                                <div class="category">Corporate</div>
+                                                <h3><a href="projects-detail.html">Business Solution</a></h3>
+                                                <div class="text">Lorem ipsum dolor sit amet constur adipelit sed do eiusm tempor magna aliqu enim ad minim veniam quis nostrud.exercittion ullamco laboris nisi ut aliquip excepteur.sint occaecat cuidatat non proident sunt in culpa officia.</div>
+                                                <div class="link-btn"><a href="#" class="theme-btn btn-style-two small-btn">Read More</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--Portfolio Tab-->
+            <div class="p-tab" id="p-tab-3">
+                <div class="project-carousel owl-theme owl-carousel">
+
+                    <!--Gallery Block-->
+                    <div class="gallery-block">
+                        <div class="inner-box">
+                            <figure class="image-box">
+                                <img src="images/gallery/3.jpg" alt="">
+                                <!--Overlay Box-->
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <div class="content">
+                                            <div class="content-text">
+                                                <div class="category">Corporate</div>
+                                                <h3><a href="projects-detail.html">Business Solution</a></h3>
+                                                <div class="text">Lorem ipsum dolor sit amet constur adipelit sed do eiusm tempor magna aliqu enim ad minim veniam quis nostrud.exercittion ullamco laboris nisi ut aliquip excepteur.sint occaecat cuidatat non proident sunt in culpa officia.</div>
+                                                <div class="link-btn"><a href="#" class="theme-btn btn-style-two small-btn">Read More</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <!--Gallery Block-->
+                    <div class="gallery-block">
+                        <div class="inner-box">
+                            <figure class="image-box">
+                                <img src="images/gallery/1.jpg" alt="">
+                                <!--Overlay Box-->
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <div class="content">
+                                            <div class="content-text">
+                                                <div class="category">Corporate</div>
+                                                <h3><a href="projects-detail.html">Business Solution</a></h3>
+                                                <div class="text">Lorem ipsum dolor sit amet constur adipelit sed do eiusm tempor magna aliqu enim ad minim veniam quis nostrud.exercittion ullamco laboris nisi ut aliquip excepteur.sint occaecat cuidatat non proident sunt in culpa officia.</div>
+                                                <div class="link-btn"><a href="#" class="theme-btn btn-style-two small-btn">Read More</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <!--Gallery Block-->
+                    <div class="gallery-block">
+                        <div class="inner-box">
+                            <figure class="image-box">
+                                <img src="images/gallery/2.jpg" alt="">
+                                <!--Overlay Box-->
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <div class="content">
+                                            <div class="content-text">
+                                                <div class="category">Corporate</div>
+                                                <h3><a href="projects-detail.html">Business Solution</a></h3>
+                                                <div class="text">Lorem ipsum dolor sit amet constur adipelit sed do eiusm tempor magna aliqu enim ad minim veniam quis nostrud.exercittion ullamco laboris nisi ut aliquip excepteur.sint occaecat cuidatat non proident sunt in culpa officia.</div>
+                                                <div class="link-btn"><a href="#" class="theme-btn btn-style-two small-btn">Read More</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <!--Gallery Block-->
+                    <div class="gallery-block">
+                        <div class="inner-box">
+                            <figure class="image-box">
+                                <img src="images/gallery/4.jpg" alt="">
+                                <!--Overlay Box-->
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <div class="content">
+                                            <div class="content-text">
+                                                <div class="category">Corporate</div>
+                                                <h3><a href="projects-detail.html">Business Solution</a></h3>
+                                                <div class="text">Lorem ipsum dolor sit amet constur adipelit sed do eiusm tempor magna aliqu enim ad minim veniam quis nostrud.exercittion ullamco laboris nisi ut aliquip excepteur.sint occaecat cuidatat non proident sunt in culpa officia.</div>
+                                                <div class="link-btn"><a href="#" class="theme-btn btn-style-two small-btn">Read More</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--Portfolio Tab-->
+            <div class="p-tab" id="p-tab-4">
+                <div class="project-carousel owl-theme owl-carousel">
+
+                    <!--Gallery Block-->
+                    <div class="gallery-block">
+                        <div class="inner-box">
+                            <figure class="image-box">
+                                <img src="images/gallery/1.jpg" alt="">
+                                <!--Overlay Box-->
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <div class="content">
+                                            <div class="content-text">
+                                                <div class="category">Corporate</div>
+                                                <h3><a href="projects-detail.html">Business Solution</a></h3>
+                                                <div class="text">Lorem ipsum dolor sit amet constur adipelit sed do eiusm tempor magna aliqu enim ad minim veniam quis nostrud.exercittion ullamco laboris nisi ut aliquip excepteur.sint occaecat cuidatat non proident sunt in culpa officia.</div>
+                                                <div class="link-btn"><a href="#" class="theme-btn btn-style-two small-btn">Read More</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <!--Gallery Block-->
+                    <div class="gallery-block">
+                        <div class="inner-box">
+                            <figure class="image-box">
+                                <img src="images/gallery/4.jpg" alt="">
+                                <!--Overlay Box-->
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <div class="content">
+                                            <div class="content-text">
+                                                <div class="category">Corporate</div>
+                                                <h3><a href="projects-detail.html">Business Solution</a></h3>
+                                                <div class="text">Lorem ipsum dolor sit amet constur adipelit sed do eiusm tempor magna aliqu enim ad minim veniam quis nostrud.exercittion ullamco laboris nisi ut aliquip excepteur.sint occaecat cuidatat non proident sunt in culpa officia.</div>
+                                                <div class="link-btn"><a href="#" class="theme-btn btn-style-two small-btn">Read More</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <!--Gallery Block-->
+                    <div class="gallery-block">
+                        <div class="inner-box">
+                            <figure class="image-box">
+                                <img src="images/gallery/2.jpg" alt="">
+                                <!--Overlay Box-->
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <div class="content">
+                                            <div class="content-text">
+                                                <div class="category">Corporate</div>
+                                                <h3><a href="projects-detail.html">Business Solution</a></h3>
+                                                <div class="text">Lorem ipsum dolor sit amet constur adipelit sed do eiusm tempor magna aliqu enim ad minim veniam quis nostrud.exercittion ullamco laboris nisi ut aliquip excepteur.sint occaecat cuidatat non proident sunt in culpa officia.</div>
+                                                <div class="link-btn"><a href="#" class="theme-btn btn-style-two small-btn">Read More</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <!--Gallery Block-->
+                    <div class="gallery-block">
+                        <div class="inner-box">
+                            <figure class="image-box">
+                                <img src="images/gallery/3.jpg" alt="">
+                                <!--Overlay Box-->
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <div class="content">
+                                            <div class="content-text">
+                                                <div class="category">Corporate</div>
+                                                <h3><a href="projects-detail.html">Business Solution</a></h3>
+                                                <div class="text">Lorem ipsum dolor sit amet constur adipelit sed do eiusm tempor magna aliqu enim ad minim veniam quis nostrud.exercittion ullamco laboris nisi ut aliquip excepteur.sint occaecat cuidatat non proident sunt in culpa officia.</div>
+                                                <div class="link-btn"><a href="#" class="theme-btn btn-style-two small-btn">Read More</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!--End Project Section-->
+<!-- Testimonial Section -->
+<section class="testimonial-section-two sp-one">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="content-wrapper wow fadeInUp" data-wow-duration="1.2s">
+                    <div class="sec-title">
+                        <h1>What Our Clients <br>Are Saying</h1>
+                    </div>
+                    <ul class="bxslider ">
+                        @foreach (var feedback in Model.Feedbacks)
+                        {
+                            <li>
+                                <div class="testimonial-block-two">
+                                    <div class="inner-box">
+                                        <div class="quote"><img src="images/icons/quote-icon.png" alt=""></div>
+                                        <div class="text">@feedback.Content</div>
+                                        <h4>@feedback.Name</h4>
+                                    </div>
+                                </div>
+                            </li>
+                        }
+
+
+
+                    </ul>
+                    <div class="slider-pager slide-nav">
+                        <ul class="nav-link list-inline">
+                            <li id="slider-prev"></li>
+                            <li id="slider-next"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="slider-pager">
+                    <ul class="list-inline thumb-box">
+                        @foreach (var fimage in Model.Feedbacks)
+                         {
+                            <li>
+                                <a class="active" data-slide-index="0" href="#"><img src="~/Uploads/@fimage.ClientImage" alt=""></a>
+                            </li>
+
+                         }
+
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

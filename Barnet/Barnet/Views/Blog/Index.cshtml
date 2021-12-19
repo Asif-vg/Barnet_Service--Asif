@@ -1,0 +1,54 @@
+﻿@model VmBlog
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Page title -->
+<section class="page-title" style="background-image:url(images/background/3.jpg)">
+    <div class="container">
+        <div class="outer-box">
+            <h1>Blog Grid One</h1>
+            <ul class="bread-crumb clearfix">
+                <li><a href="index.html">Home</a></li>
+                <li class="active">Blog Grid One</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Blog section one -->
+<section class="blog-section-one sp-two">
+    <div class="container">
+        <div class="row">
+            @foreach (var blog in Model.Blogs)
+            {
+                <!-- News block two -->
+                <div class="col-lg-4 news-block-two">
+                    <div class="inner-box wow fadeInUp" data-wow-duration="1.5s">
+                        <div class="image">
+                            <img src="~/Uploads/@blog.Image" alt="">
+                            <div class="overlay">
+                                <a class="link-btn" href="blog-details.html">
+                                    <i class="icon-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="lower-content">
+                            <ul class="post-meta">
+                                <li><span>Explore</span></li>
+                                <li><span>Lyfestyle</span></li>
+                            </ul>
+                            <h4><a href="blog-details.html">@blog.Title</a></h4>
+                            <div class="text">@blog.Content</div>
+                        </div>
+                    </div>
+                </div>
+            }
+
+
+
+        </div>
+    </div>
+</section>
+
